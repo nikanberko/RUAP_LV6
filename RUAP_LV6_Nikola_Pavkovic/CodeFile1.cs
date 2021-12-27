@@ -150,7 +150,7 @@ namespace CallBatchExecutionService
             const string StorageAccountKey = "Dx9WbMIThAvXRQWap/aLnxT9LV5txxw=="; // Replace this with your Azure Storage Key
             const string StorageContainerName = "mycontainer"; // Replace this with your Azure Storage Container name
             string storageConnectionString = string.Format("DefaultEndpointsProtocol=https;AccountName={0};AccountKey={1}", StorageAccountName, StorageAccountKey);
-            const string apiKey = "abc123"; // Replace this with the API key for the web service
+            const string apiKey = "+5YO3VmHJIeEGiR/MSeigZa63Q+FV3m+oHjW08DuaqAdFzUmjzRfOiogo63k5YDgfv5lFklmzY1jvI9npBjEPg=="; // Replace this with the API key for the web service
 
             // set a time out for polling status
             const int TimeOutInMilliseconds = 120 * 1000; // Set a timeout of 2 minutes
