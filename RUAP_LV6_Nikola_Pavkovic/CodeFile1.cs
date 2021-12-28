@@ -21,8 +21,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace CallBatchExecutionService
@@ -113,7 +113,7 @@ namespace CallBatchExecutionService
 
             var blobClient = CloudStorageAccount.Parse(storageConnectionString).CreateCloudBlobClient();
             var container = blobClient.GetContainerReference(storageContainerName);
-            container.CreateIfNotExists();
+            container.CreateIfNotExistsAsync();
             var blob = container.GetBlockBlobReference(inputBlobName);
             blob.UploadFromFile(inputFileLocation, FileMode.Open);
         }
