@@ -50,7 +50,7 @@ namespace CallRequestResponseService
                     {
                     }
                 };
-                const string apiKey = "abc123"; // Replace this with the API key for the web service
+                const string apiKey = "VdROzKC+iQAHeII9SHY05xz+sSh+0zJAF9ylU5z5dJFnj/lk7n7jlqOklQS6d/8K7eNU2I0GYwsQj5Jp4B65Bw=="; // Replace this with the API key for the web service
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
                 client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/981b41995e554a238277825de092ac33/services/6d4e9b424487402b92ca3bc2592fcb03/execute?api-version=2.0&details=true");
